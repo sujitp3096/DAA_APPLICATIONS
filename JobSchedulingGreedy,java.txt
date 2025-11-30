@@ -1,0 +1,58 @@
+import java.util.*;
+
+class Job {
+    int start, finish;
+
+    Job(int start, int finish) {
+        this.start = start;
+        this.finish = finish;
+    }
+}
+
+public class JobSchedulingGreedy {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Number of jobs
+        System.out.print("Enter number of jobs: ");
+        int n = sc.nextInt();
+
+        Job[] jobs = new Job[n];
+
+        // Taking job inputs from the user
+        System.out.println("\nEnter Start and Finish Time of Each Job:");
+        for (int i = 0; i < n; i++) {
+            System.out.print("Job " + (i + 1) + " Start Time: ");
+            int s = sc.nextInt();
+
+            System.out.print("Job " + (i + 1) + " Finish Time: ");
+            int f = sc.nextInt();
+
+            jobs[i] = new Job(s, f);
+        }
+
+        // Sort jobs by finish time (Greedy condition)
+        Arrays.sort(jobs, Comparator.comparingInt(j -> j.finish));
+
+        System.out.println("\nSelected Jobs in Optimal Order:");
+        int count = 1;
+
+        // First job is always selected
+        System.out.println("→ Job 1 (Start: " + jobs[0].start + ", Finish: " + jobs[0].finish + ")");
+        int lastFinish = jobs[0].finish;
+
+        // Select next non-overlapping jobs
+        for (int i = 1; i < n; i++) {
+            if (jobs[i].start >= lastFinish) {
+                count++;
+                System.out.println("→ Job " + (i + 1) + " (Start: " + jobs[i].start + ", Finish: " + jobs[i].finish + ")");
+                lastFinish = jobs[i].finish;
+            }
+        }
+
+        System.out.println("\nMaximum number of non-overlapping jobs: " + count);
+
+        sc.close();
+    }
+}
