@@ -14,7 +14,6 @@ public class JobSchedulingGreedy {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Number 
         System.out.print("Enter number of jobs: ");
         int n = sc.nextInt();
 
@@ -56,4 +55,5 @@ public class JobSchedulingGreedy {
         sc.close();
     }
 }
+
 
