@@ -5,7 +5,7 @@ public class KnapsackShoppingAssistant {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Input number of items
+       
         System.out.print("Enter number of items: ");
         int n = sc.nextInt();
 
@@ -58,3 +58,4 @@ public class KnapsackShoppingAssistant {
         sc.close();
     }
 }
+
