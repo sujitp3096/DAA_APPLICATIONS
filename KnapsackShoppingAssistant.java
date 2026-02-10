@@ -12,7 +12,7 @@ public class KnapsackShoppingAssistant {
         int[] weight = new int[n];
         int[] value = new int[n];
 
-        // Input weight and value of each item
+       
         System.out.println("Enter weight and value of each item:");
         for (int i = 0; i < n; i++) {
             System.out.print("Item " + (i + 1) + " Weight: ");
@@ -58,4 +58,5 @@ public class KnapsackShoppingAssistant {
         sc.close();
     }
 }
+
 
