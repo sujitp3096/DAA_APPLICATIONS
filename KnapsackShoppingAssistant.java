@@ -25,7 +25,7 @@ public class KnapsackShoppingAssistant {
         System.out.print("Enter maximum weight capacity: ");
         int capacity = sc.nextInt();
 
-        // DP table
+        // DP
         int[][] dp = new int[n + 1][capacity + 1];
 
         // 0/1 Knapsack Algorithm
@@ -58,5 +58,6 @@ public class KnapsackShoppingAssistant {
         sc.close();
     }
 }
+
 
 
