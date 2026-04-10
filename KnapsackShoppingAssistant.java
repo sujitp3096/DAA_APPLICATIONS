@@ -10,7 +10,6 @@ public class KnapsackShoppingAssistant {
         int n = sc.nextInt();
         int[] weight = new int[n];
         int[] value = new int[n];
-
        
         System.out.println("Enter weight and value of each item:");
         for (int i = 0; i < n; i++) {
