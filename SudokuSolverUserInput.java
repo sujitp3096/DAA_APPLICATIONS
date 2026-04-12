@@ -10,7 +10,7 @@ public class SudokuSolverUserInput {
 
         System.out.println("Enter Sudoku Puzzle (0 for empty cells):");
         
-        // Taking Sudoku input from user
+        // Taking Sudoku input from use
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
                 board[i][j] = sc.nextInt();
