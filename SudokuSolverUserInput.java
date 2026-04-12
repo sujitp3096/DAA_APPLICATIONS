@@ -9,7 +9,7 @@ public class SudokuSolverUserInput {
         int[][] board = new int[SIZE][SIZE];
 
         System.out.println("Enter Sudoku Puzzle (0 for empty cells):");
-        
+    
         // Taking Sudoku input from use
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
