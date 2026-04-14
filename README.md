@@ -23,4 +23,4 @@ It focuses on understanding how algorithms are applied to solve real-world probl
 3. Run using command line or IDE
 
 ## 🎯 Purpose
-Learning and applying DAA concepts for academic and interview preparation.
+Learning and applying DAA concepts for academic and interview preparation...
