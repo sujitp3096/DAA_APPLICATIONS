@@ -11,6 +11,7 @@ It focuses on understanding how algorithms are applied to solve real-world probl
 - Algorithms
 - Data Structures
 
+
 ## 📚 Algorithms Covered
 - Greedy Algorithms
 - Dynamic Programming
