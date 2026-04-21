@@ -5,6 +5,7 @@ This repository contains various applications implemented in Java using Design a
 
 It focuses on understanding how algorithms are applied to solve real-world problems efficiently.
 
+
 ## 🛠 Technologies Used
 - Java
 - Algorithms
